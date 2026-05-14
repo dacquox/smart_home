@@ -1,0 +1,2 @@
+void edgeWakeBegin();
+void edgeWakeLoop();
