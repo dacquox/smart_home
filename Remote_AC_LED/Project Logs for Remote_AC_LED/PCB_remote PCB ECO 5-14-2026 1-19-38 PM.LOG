@@ -1,0 +1,11 @@
+Change Component Designator: OldDesignator=H1 NewDesignator=UART_S3
+Change Component Designator: OldDesignator=H2 NewDesignator=INMP441
+Change Component Designator: OldDesignator=H3 NewDesignator=Servo
+Change Component Designator: OldDesignator=H4 NewDesignator=HC-12
+Change Component Designator: OldDesignator=H6 NewDesignator=IR_Send
+Change Component Designator: OldDesignator=H7 NewDesignator=IR_Receive
+Change Component Designator: OldDesignator=H10 NewDesignator=V_In
+Change Component Designator: OldDesignator=H? NewDesignator=UART1
+Change Net Name : Old Net Name=NetH1_3 New Net Name=NetU1_J1_10
+Change Net Name : Old Net Name=NetH1_4 New Net Name=NetU1_J1_11
+Added Room: Name=Sch_remote

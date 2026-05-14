@@ -1,0 +1,7 @@
+Added Component: Designator=H10(header_2_power)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=VCC Pin=H10-1
+Added Pin To Net: NetName=GND Pin=H10-2
+Added Member To Class: ClassName=Sch_remote Member=Component H3 Servo
+Added Member To Class: ClassName=Sch_remote Member=Component H10 V_In
+Added Room: Name=Sch_remote

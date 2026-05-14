@@ -1,0 +1,16 @@
+Added Component: Designator=U2(MAX98357)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/3006/Adafruit+Industries/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Adafruit"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "3006"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/3006/Adafruit+Industries/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=NetU1_J1_1 Pin=U2-3
+Added Pin To Net: NetName=GAIN Pin=U2-4
+Added Pin To Net: NetName=DIN Pin=U2-5
+Added Pin To Net: NetName=BCLK Pin=U2-6
+Added Pin To Net: NetName=LRC Pin=U2-7
+Added Member To Class: ClassName=Sch_remote Member=Component U2 MAX98357A

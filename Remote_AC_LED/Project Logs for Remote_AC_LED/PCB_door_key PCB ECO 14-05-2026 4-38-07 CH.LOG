@@ -1,0 +1,118 @@
+Added Component: Designator=HC12(XH2.54M-5)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001298"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 5P XH2.54-5P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=INMP441(XH2.54M-6)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001972"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 6P XH2.54-6P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=J?(SAMTEC_TSW-114-07-L-S-LL)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TSW-114-07-L-S-LL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Relay(XH2.54M-3)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001292"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 3P XH2.54-3P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=Touch(XH2.54M-3)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001292"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 3P XH2.54-3P Ð?c Th?ng"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found MODULE_ESP32_DEVKIT_V1
+Add Component: Footprint Not Found MAX98357
+Add Component: Footprint Not Found ESP32_S3_DEV_KIT
+Added Component: Designator=UART1(Header 4P DC 2.54)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001310"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 4P XH2.54-4P Ð?c Cong"; VariantName = "[No Variations]"
+Added Component: Designator=UART_S3(Header 4P DC 2.54)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001310"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 4P XH2.54-4P Ð?c Cong"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found header_2_power
+Added Pin To Net: NetName=SET Pin=HC12-1
+Added Pin To Net: NetName=RX2 Pin=HC12-2
+Added Pin To Net: NetName=TX2 Pin=HC12-3
+Added Pin To Net: NetName=GND Pin=HC12-4
+Added Pin To Net: NetName=VCC Pin=HC12-5
+Added Pin To Net: NetName=GND Pin=INMP441-1
+Added Pin To Net: NetName=VCC Pin=INMP441-2
+Added Pin To Net: NetName=SD Pin=INMP441-3
+Added Pin To Net: NetName=GND Pin=INMP441-4
+Added Pin To Net: NetName=WS Pin=INMP441-5
+Added Pin To Net: NetName=SCK Pin=INMP441-6
+Added Pin To Net: NetName=SIG Pin=Relay-1
+Added Pin To Net: NetName=VCC Pin=Relay-2
+Added Pin To Net: NetName=GND Pin=Relay-3
+Added Pin To Net: NetName=VCC Pin=Touch-1
+Added Pin To Net: NetName=IO Pin=Touch-2
+Added Pin To Net: NetName=GND Pin=Touch-3
+Add Pin To Net: Unknown Pin: Pin U?-1
+Add Pin To Net: Unknown Pin: Pin U?-2
+Add Pin To Net: Unknown Pin: Pin U?-2
+Add Pin To Net: Unknown Pin: Pin U?-3
+Add Pin To Net: Unknown Pin: Pin U?-4
+Add Pin To Net: Unknown Pin: Pin U?-5
+Add Pin To Net: Unknown Pin: Pin U?-6
+Add Pin To Net: Unknown Pin: Pin U?-6
+Add Pin To Net: Unknown Pin: Pin U?-7
+Add Pin To Net: Unknown Pin: Pin U?-7
+Add Pin To Net: Unknown Pin: Pin U?-20
+Add Pin To Net: Unknown Pin: Pin U?-21
+Add Pin To Net: Unknown Pin: Pin U?-22
+Add Pin To Net: Unknown Pin: Pin U?-30
+Add Pin To Net: Unknown Pin: Pin U?-J1_1
+Add Pin To Net: Unknown Pin: Pin U?-J1_4
+Add Pin To Net: Unknown Pin: Pin U?-J1_5
+Add Pin To Net: Unknown Pin: Pin U?-J1_6
+Add Pin To Net: Unknown Pin: Pin U?-J1_7
+Add Pin To Net: Unknown Pin: Pin U?-J1_8
+Add Pin To Net: Unknown Pin: Pin U?-J1_9
+Add Pin To Net: Unknown Pin: Pin U?-J1_10
+Add Pin To Net: Unknown Pin: Pin U?-J1_11
+Add Pin To Net: Unknown Pin: Pin U?-J1_21
+Add Pin To Net: Unknown Pin: Pin U?-J3_1
+Add Pin To Net: Unknown Pin: Pin U?-J3_22
+Added Pin To Net: NetName=GND Pin=UART1-1
+Added Pin To Net: NetName=VCC Pin=UART1-2
+Added Pin To Net: NetName=RX2 Pin=UART1-3
+Added Pin To Net: NetName=TX2 Pin=UART1-4
+Added Pin To Net: NetName=GND Pin=UART_S3-1
+Added Pin To Net: NetName=VCC Pin=UART_S3-2
+Added Pin To Net: NetName=NetU?_J1_10 Pin=UART_S3-3
+Added Pin To Net: NetName=NetU?_J1_11 Pin=UART_S3-4
+Add Pin To Net: Unknown Pin: Pin V_In-1
+Add Pin To Net: Unknown Pin: Pin V_In-2
+Added Member To Class: ClassName=Sch_door_key Member=Component HC12 HC-12
+Added Member To Class: ClassName=Sch_door_key Member=Component INMP441
+Added Member To Class: ClassName=Sch_door_key Member=Component J? Display
+Added Member To Class: ClassName=Sch_door_key Member=Component Relay Servo
+Added Member To Class: ClassName=Sch_door_key Member=Component Touch IR_Receive
+Add Class Member: Failed to add class member : Component U? ESP32_30Pin_DevKit
+Add Class Member: Failed to add class member : Component U? MAX98357A
+Add Class Member: Failed to add class member : Component U? ESP32-S3-DEVKITC
+Added Member To Class: ClassName=Sch_door_key Member=Component UART1
+Added Member To Class: ClassName=Sch_door_key Member=Component UART_S3
+Add Class Member: Failed to add class member : Component V_In
+Added Room: Name=Sch_door_key

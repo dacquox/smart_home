@@ -1,0 +1,35 @@
+Add Component: Footprint Not Found MODULE_ESP32_DEVKIT_V1
+Add Component: Footprint Not Found ESP32_S3_DEV_KIT
+Add Component: Footprint Not Found MAX98357
+Add Component: Footprint Not Found header_2_power
+Add Pin To Net: Unknown Pin: Pin U1-2
+Add Pin To Net: Unknown Pin: Pin U1-6
+Add Pin To Net: Unknown Pin: Pin U1-7
+Add Pin To Net: Unknown Pin: Pin U1-21
+Add Pin To Net: Unknown Pin: Pin U1-22
+Add Pin To Net: Unknown Pin: Pin U1-30
+Add Pin To Net: Unknown Pin: Pin U2-J1_1
+Add Pin To Net: Unknown Pin: Pin U2-J1_4
+Add Pin To Net: Unknown Pin: Pin U2-J1_5
+Add Pin To Net: Unknown Pin: Pin U2-J1_6
+Add Pin To Net: Unknown Pin: Pin U2-J1_7
+Add Pin To Net: Unknown Pin: Pin U2-J1_8
+Add Pin To Net: Unknown Pin: Pin U2-J1_9
+Add Pin To Net: Unknown Pin: Pin U2-J1_10
+Add Pin To Net: Unknown Pin: Pin U2-J1_11
+Add Pin To Net: Unknown Pin: Pin U2-J1_21
+Add Pin To Net: Unknown Pin: Pin U2-J3_1
+Add Pin To Net: Unknown Pin: Pin U2-J3_22
+Add Pin To Net: Unknown Pin: Pin U3-1
+Add Pin To Net: Unknown Pin: Pin U3-2
+Add Pin To Net: Unknown Pin: Pin U3-3
+Add Pin To Net: Unknown Pin: Pin U3-4
+Add Pin To Net: Unknown Pin: Pin U3-5
+Add Pin To Net: Unknown Pin: Pin U3-6
+Add Pin To Net: Unknown Pin: Pin U3-7
+Add Pin To Net: Unknown Pin: Pin V_In-1
+Add Pin To Net: Unknown Pin: Pin V_In-2
+Add Class Member: Failed to add class member : Component U1 ESP32_30Pin_DevKit
+Add Class Member: Failed to add class member : Component U2 ESP32-S3-DEVKITC
+Add Class Member: Failed to add class member : Component U3 MAX98357A
+Add Class Member: Failed to add class member : Component V_In
