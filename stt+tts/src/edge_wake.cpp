@@ -11,38 +11,38 @@
 #include "loamax98357.h"
 
 // ================== CHAN INMP441 ==================
-constexpr int INMP441_SCK = 5;   // SCK / BCLK
-constexpr int INMP441_WS  = 4;   // WS / LRCLK
-constexpr int INMP441_SD  = 6;   // SD / DOUT
+const int INMP441_SCK = 5;   // SCK / BCLK
+const int INMP441_WS  = 4;   // WS / LRCLK
+const int INMP441_SD  = 6;   // SD / DOUT
 
 #define INMP441_CHANNEL I2S_CHANNEL_FMT_ONLY_LEFT
 
 // ================== BOT CONFIG ==================
-// Label trong Edge Impulse phai dung y het la "white"
-const char *WAKE_LABEL = "white";
+// Label trong Edge Impulse phai dung y het la "White"
+const char *WAKE_LABEL = "diệp ơi";
 
 // Chi can white >= 0.05 la goi bot
-constexpr float WAKE_CONFIDENCE = 0.05f;
+const float WAKE_CONFIDENCE = 0.2f;
 
 // Sau khi goi "white", bot noi "Vang toi day", doi 0.5 giay roi thu lenh
-constexpr uint32_t WAIT_AFTER_WAKE_MS = 50;
+const uint32_t WAIT_AFTER_WAKE_MS = 10;
 
 // Thu lenh 5 giay gui len Gemini/API
-constexpr uint32_t COMMAND_SAMPLE_RATE = 16000;
-constexpr uint32_t COMMAND_SECONDS = 5;
+const uint32_t COMMAND_SAMPLE_RATE = 16000;
+const uint32_t COMMAND_SECONDS = 4;
 
-constexpr size_t COMMAND_PCM_SAMPLES = COMMAND_SAMPLE_RATE * COMMAND_SECONDS;
-constexpr size_t COMMAND_PCM_BYTES = COMMAND_PCM_SAMPLES * 2;
-constexpr size_t COMMAND_WAV_BYTES = 44 + COMMAND_PCM_BYTES;
+const size_t COMMAND_PCM_SAMPLES = COMMAND_SAMPLE_RATE * COMMAND_SECONDS;
+const size_t COMMAND_PCM_BYTES = COMMAND_PCM_SAMPLES * 2;
+const size_t COMMAND_WAV_BYTES = 44 + COMMAND_PCM_BYTES;
 
 // ================== I2S CONFIG ==================
-static constexpr i2s_port_t MIC_I2S_PORT = I2S_NUM_1;
+static const i2s_port_t MIC_I2S_PORT = I2S_NUM_1;
 
-static constexpr size_t RAW_READ_SAMPLES = 512;
-static constexpr size_t RAW_READ_BYTES = RAW_READ_SAMPLES * sizeof(int32_t);
+static const size_t RAW_READ_SAMPLES = 512;
+static const size_t RAW_READ_BYTES = RAW_READ_SAMPLES * sizeof(int32_t);
 
-static constexpr int EDGE_MIC_GAIN = 3;
-static constexpr int COMMAND_MIC_GAIN = 5;
+static const int EDGE_MIC_GAIN = 2;
+static const int COMMAND_MIC_GAIN = 4;
 
 // ================== EDGE IMPULSE BUFFER ==================
 typedef struct {
@@ -136,7 +136,7 @@ static bool handleWakeWord(ei_impulse_result_t &result)
 {
     float whiteScore = 0.0f;
 
-    // Tim rieng diem cua label "white"
+    // Tim rieng diem cua label "White"
     for (size_t ix = 0; ix < EI_CLASSIFIER_LABEL_COUNT; ix++) {
         if (strcmp(result.classification[ix].label, WAKE_LABEL) == 0) {
             whiteScore = result.classification[ix].value;
@@ -160,8 +160,8 @@ static bool handleWakeWord(ei_impulse_result_t &result)
     // Dung Edge Impulse de giai phong I2S mic
     microphone_inference_end();
 
-    Serial.println("BOT: Vang toi day");
-    loaMAX98357Speak("Vâng tôi đây.");
+    Serial.println("BOT: Da em diep day");
+    loaMAX98357Speak("Dạ, em Diệp đây.");
 
     delay(WAIT_AFTER_WAKE_MS);
 

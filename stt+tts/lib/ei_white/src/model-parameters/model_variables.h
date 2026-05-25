@@ -46,7 +46,7 @@
 #include "edge-impulse-sdk/classifier/inferencing_engines/engines.h"
 #include "edge-impulse-sdk/classifier/postprocessing/ei_postprocessing_common.h"
 
-const char* ei_classifier_inferencing_categories_979472_4[] = { "noise", "unknown", "white" };
+const char* ei_classifier_inferencing_categories_979472_4[] = { "diệp ơi", "noise", "unknown" };
 
 ei_dsp_named_axis_t ei_dsp_config_979472_33_named_axes[] = {
     { .name = "Signal", .axis = 0 }
@@ -151,7 +151,7 @@ const ei_impulse_t impulse_979472_4 = {
     .project_name = "Dieu Khien Giong Noi Offline",
     .impulse_id = 4,
     .impulse_name = "Impulse #4",
-    .deploy_version = 96,
+    .deploy_version = 101,
 
     .nn_input_frame_size = 637,
     .raw_sample_count = 16000,

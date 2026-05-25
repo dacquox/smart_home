@@ -9,7 +9,7 @@ void uartSendLine(const String &line) {
     Serial.println(line);
 }
 
-//clear cac buffer cũ đẻ phát đúng tts
+//clear cac buffer cũ để phát đúng tts
 void clearUartReplyBuffer() {
     while (Serial2.available()) {
         Serial2.read();

@@ -4,17 +4,17 @@
 #include "uart.h"
 #include "edge_wake.h"
 
-const char *WIFI_SSID = "Quoc";
-const char *WIFI_PASSWORD = "12345678";
+const char *WIFI_SSID = "Khu Tro";
+const char *WIFI_PASSWORD = "11111111";
 
 
-constexpr int MAX98357_BCLK = 15;
-constexpr int MAX98357_LRC  = 16;
-constexpr int MAX98357_DIN  = 7;
+const int MAX98357_BCLK = 15;
+const int MAX98357_LRC  = 16;
+const int MAX98357_DIN  = 7;
 
-constexpr int UART2_RX_PIN = 18;
-constexpr int UART2_TX_PIN = 17;
-constexpr uint32_t UART2_BAUD = 115200;
+const int UART2_RX_PIN = 18;
+const int UART2_TX_PIN = 17;
+const uint32_t UART2_BAUD = 115200;
 
 void connectWiFi() {
     WiFi.mode(WIFI_STA);
