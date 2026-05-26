@@ -7,8 +7,7 @@
 #define AC_TEMP_MAX 28
 #define AC_TEMP_DEFAULT 25
 
-// ===================== LED codes =====================
-extern uint32_t led_code[10];
+
 
 // ===================== RAW data điều hòa từng nhiệt độ =====================
 extern uint16_t rawData_ac_on[];
@@ -22,16 +21,6 @@ extern uint16_t rawData_ac_temp_25[];
 extern uint16_t rawData_ac_temp_26[];
 extern uint16_t rawData_ac_temp_27[];
 extern uint16_t rawData_ac_temp_28[];
-
-// ===================== LED =====================
-void On_led(void);
-void Off_led(void);
-void _5m_time(uint32_t code, uint8_t protocol);
-void _15m_time(uint32_t code, uint8_t protocol);
-void _30m_time(uint32_t code, uint8_t protocol);
-void _60m_time(uint32_t code, uint8_t protocol);
-void _120m_time(uint32_t code, uint8_t protocol);
-
 
 // ===================== Điều hòa =====================
 void On_AC();

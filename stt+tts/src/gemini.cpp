@@ -12,7 +12,7 @@
 // ================== CAU HINH GEMINI ==================
 
 // Dien API key vao day
-const char *GEMINI_API_KEY = "AIzaSyC4FHfxfHdeY9QRZX1G9C7Fjk2xTbdmwb8";
+const char *GEMINI_API_KEY = "AIzaSyB5oo91JogWggLDj2iaXlBvhakMybdpix4";
 
 // Model nhanh hơn cho tác vụ STT/lệnh ngắn.
 // const char *GEMINI_STT_MODEL = "gemini-3-flash-preview";

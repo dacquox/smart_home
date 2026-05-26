@@ -22,7 +22,7 @@ const int INMP441_SD  = 6;   // SD / DOUT
 const char *WAKE_LABEL = "diệp ơi";
 
 // Chi can white >= 0.05 la goi bot
-const float WAKE_CONFIDENCE = 0.2f;
+const float WAKE_CONFIDENCE = 0.4f;
 
 // Sau khi goi "white", bot noi "Vang toi day", doi 0.5 giay roi thu lenh
 const uint32_t WAIT_AFTER_WAKE_MS = 10;
