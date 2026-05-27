@@ -12,7 +12,7 @@
 // ================== CAU HINH GEMINI ==================
 
 // Dien API key vao day
-const char *GEMINI_API_KEY = "AIzaSyAzt2T5JmLg6e8UFbOHrzad-d1-bMzbHcc";
+const char *GEMINI_API_KEY = "";
 
 // Model nhanh hơn cho tác vụ STT/lệnh ngắn.
 // const char *GEMINI_STT_MODEL = "gemini-3-flash-preview";
@@ -22,7 +22,7 @@ const char *GEMINI_STT_MODEL = "gemini-2.5-flash-lite";
 static const uint32_t GEMINI_HTTP_TIMEOUT_MS = 30000;
 
 // Timeout đợi ESP32 điều khiển phản hồi UART
-static const uint32_t UART_REPLY_TIMEOUT_MS = 300;
+static const uint32_t UART_REPLY_TIMEOUT_MS = 500;
 
 // Nếu không cần chờ phản hồi thật từ ESP32 điều khiển, đặt false để phản hồi nhanh hơn.
 static const bool WAIT_UART_REPLY = true;
@@ -225,6 +225,9 @@ static String transcribeAudioToText(uint8_t *wavBuffer, size_t wavSize) {
     // Giai phong payload
     payload = "";
 
+    Serial.printf("[TIME] base64 = %lu ms\n", t1 - t0);
+    Serial.printf("[TIME] build payload = %lu ms\n", t2 - t1);
+    Serial.printf("[TIME] Gemini total = %lu ms\n", t3 - t2);
 
     if (response.length() == 0) {
         Serial.println("!! Gemini khong tra ve response hop le.");
@@ -234,6 +237,10 @@ static String transcribeAudioToText(uint8_t *wavBuffer, size_t wavSize) {
     String text = extractFirstText(response);
 
     uint32_t t4 = millis();
+
+    Serial.printf("[TIME] parse response = %lu ms\n", t4 - t3);
+    Serial.println("===== KET THUC NHAN DANG =====");
+    Serial.println();
 
     return text;
 }
@@ -319,8 +326,12 @@ void geminiProcessAudio(uint8_t *wavBuffer, size_t wavSize) {
         textToSpeak = dieukhienAnswerForCommand(result);
 
         if (WAIT_UART_REPLY) {
+            uint32_t uartWaitStart = millis();
+
             String reply = waitUartReply(UART_REPLY_TIMEOUT_MS);
 
+            uint32_t uartWaitEnd = millis();
+            Serial.printf("[TIME] wait UART reply = %lu ms\n", uartWaitEnd - uartWaitStart);
 
             if (reply.length() > 0) {
                 textToSpeak = reply;
@@ -354,5 +365,8 @@ void geminiProcessAudio(uint8_t *wavBuffer, size_t wavSize) {
     uint32_t speakEnd = millis();
     uint32_t totalEnd = millis();
 
+    Serial.printf("[TIME] speak = %lu ms\n", speakEnd - speakStart);
+    Serial.printf("[TIME] TOTAL geminiProcessAudio = %lu ms\n", totalEnd - totalStart);
+    Serial.println("=======================================");
     Serial.println();
 }

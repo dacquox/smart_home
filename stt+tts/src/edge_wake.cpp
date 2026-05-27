@@ -118,6 +118,9 @@ void edgeWakeLoop()
     }
 
     for (size_t ix = 0; ix < EI_CLASSIFIER_LABEL_COUNT; ix++) {
+        Serial.print(result.classification[ix].label);
+        Serial.print(": ");
+        Serial.println(result.classification[ix].value, 4);
     }
 
 #if EI_CLASSIFIER_HAS_ANOMALY == 1
@@ -354,6 +357,7 @@ static void capture_samples(void *arg)
 static bool microphone_inference_start(uint32_t n_samples)
 {
     record_status = false;
+    delay(150);
 
     if (inference.buffer != NULL) {
         ei_free(inference.buffer);
