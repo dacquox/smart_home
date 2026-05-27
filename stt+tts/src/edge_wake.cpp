@@ -22,7 +22,7 @@ const int INMP441_SD  = 6;   // SD / DOUT
 const char *WAKE_LABEL = "diệp ơi";
 
 // Chi can white >= 0.05 la goi bot
-const float WAKE_CONFIDENCE = 0.4f;
+const float WAKE_CONFIDENCE = 0.2f;
 
 // Sau khi goi "white", bot noi "Vang toi day", doi 0.5 giay roi thu lenh
 const uint32_t WAIT_AFTER_WAKE_MS = 10;
@@ -118,9 +118,6 @@ void edgeWakeLoop()
     }
 
     for (size_t ix = 0; ix < EI_CLASSIFIER_LABEL_COUNT; ix++) {
-        Serial.print(result.classification[ix].label);
-        Serial.print(": ");
-        Serial.println(result.classification[ix].value, 4);
     }
 
 #if EI_CLASSIFIER_HAS_ANOMALY == 1
@@ -357,7 +354,6 @@ static void capture_samples(void *arg)
 static bool microphone_inference_start(uint32_t n_samples)
 {
     record_status = false;
-    delay(150);
 
     if (inference.buffer != NULL) {
         ei_free(inference.buffer);

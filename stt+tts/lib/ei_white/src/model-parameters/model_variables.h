@@ -151,7 +151,7 @@ const ei_impulse_t impulse_979472_4 = {
     .project_name = "Dieu Khien Giong Noi Offline",
     .impulse_id = 4,
     .impulse_name = "Impulse #4",
-    .deploy_version = 105,
+    .deploy_version = 101,
 
     .nn_input_frame_size = 637,
     .raw_sample_count = 16000,

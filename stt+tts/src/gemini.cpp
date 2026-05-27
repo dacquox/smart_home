@@ -12,7 +12,7 @@
 // ================== CAU HINH GEMINI ==================
 
 // Dien API key vao day
-const char *GEMINI_API_KEY = "AIzaSyB5oo91JogWggLDj2iaXlBvhakMybdpix4";
+const char *GEMINI_API_KEY = "AIzaSyAzt2T5JmLg6e8UFbOHrzad-d1-bMzbHcc";
 
 // Model nhanh hơn cho tác vụ STT/lệnh ngắn.
 // const char *GEMINI_STT_MODEL = "gemini-3-flash-preview";
@@ -22,7 +22,7 @@ const char *GEMINI_STT_MODEL = "gemini-2.5-flash-lite";
 static const uint32_t GEMINI_HTTP_TIMEOUT_MS = 30000;
 
 // Timeout đợi ESP32 điều khiển phản hồi UART
-static const uint32_t UART_REPLY_TIMEOUT_MS = 500;
+static const uint32_t UART_REPLY_TIMEOUT_MS = 300;
 
 // Nếu không cần chờ phản hồi thật từ ESP32 điều khiển, đặt false để phản hồi nhanh hơn.
 static const bool WAIT_UART_REPLY = true;
