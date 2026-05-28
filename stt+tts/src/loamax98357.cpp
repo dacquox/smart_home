@@ -112,8 +112,8 @@ void loaMAX98357Speak(const String &text) {
     // Bien nay luu thoi diem gan nhat audio con dang chay
     uint32_t lastRunning = millis();
 
-    // Vong lap phat audio, toi da 10 giay
-    while (millis() - t0 < 10000) {
+    // Vong lap phat audio, toi da 20 giay
+    while (millis() - t0 < 20000) {
         // Ham nay bat buoc phai goi lien tuc de audio duoc phat ra loa
         audio.loop();
 
@@ -123,9 +123,9 @@ void loaMAX98357Speak(const String &text) {
         }
 
         // Dieu kien thoat:
-        // Sau it nhat 2 giay,
-        // neu audio khong con chay va da dung hon 0.5 giay thi thoat vong lap
-        if (!audio.isRunning() && millis() - t0 > 2000 && millis() - lastRunning > 500) {
+        // Sau it nhat 3 giay,
+        // neu audio khong con chay va da dung hon 1.2 giay thi thoat vong lap
+        if (!audio.isRunning() && millis() - t0 > 3000 && millis() - lastRunning > 1200) {
             break;
         }
 

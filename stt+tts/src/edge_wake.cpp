@@ -18,16 +18,16 @@ const int INMP441_SD  = 6;   // SD / DOUT
 #define INMP441_CHANNEL I2S_CHANNEL_FMT_ONLY_LEFT
 
 // ================== BOT CONFIG ==================
-// Label trong Edge Impulse phai dung y het la "White"
+// Label trong Edge Impulse phai dung y het la "diệp ơi"
 const char *WAKE_LABEL = "diệp ơi";
 
-// Chi can white >= 0.05 la goi bot
-const float WAKE_CONFIDENCE = 0.2f;
+// Chi can white >= 0.1 la goi bot
+const float WAKE_CONFIDENCE = 0.1f;
 
-// Sau khi goi "white", bot noi "Vang toi day", doi 0.5 giay roi thu lenh
+// Sau khi goi "diệp ơi", bot noi "Vang toi day", doi 0.5 giay roi thu lenh
 const uint32_t WAIT_AFTER_WAKE_MS = 10;
 
-// Thu lenh 5 giay gui len Gemini/API
+// Thu lenh 4 giay gui len Gemini/API
 const uint32_t COMMAND_SAMPLE_RATE = 16000;
 const uint32_t COMMAND_SECONDS = 4;
 
@@ -160,8 +160,8 @@ static bool handleWakeWord(ei_impulse_result_t &result)
     // Dung Edge Impulse de giai phong I2S mic
     microphone_inference_end();
 
-    Serial.println("BOT: Da em diep day");
-    loaMAX98357Speak("Dạ, em Diệp đây.");
+    Serial.println("BOT: Vang, em Diep day");
+    loaMAX98357Speak("Vâng, em Diệp đây.");
 
     delay(WAIT_AFTER_WAKE_MS);
 
@@ -201,7 +201,7 @@ static bool handleWakeWord(ei_impulse_result_t &result)
     wavBuffer = nullptr;
 
     Serial.println();
-    Serial.println("===== QUAY LAI CHE DO NGHE WHITE =====");
+    Serial.println("===== QUAY LAI CHE DO NGHE =====");
 
     microphone_inference_start(EI_CLASSIFIER_RAW_SAMPLE_COUNT);
 
